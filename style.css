@@ -58,8 +58,29 @@ img {
 }
 
 /* MAIN */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.row .image {
+  width: 90%;
+  position: relative;
+}
+.image img {
+  position: absolute;
+}
+.image img:last-child{
+  display: none;
+}
+
+.image:hover img:last-child{
+  display: block;
+}
+
+
 .px-2 {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .product {
@@ -67,6 +88,7 @@ img {
   display: inline-block;
   width: 300px;
   cursor: pointer;
+  height: 500px;
 }
 
 .product .discount {
@@ -74,8 +96,8 @@ img {
   padding: 3px 3px;
   background-color: red;
   color: white;
-  bottom: 25px;
-  left: 20px;
+  bottom: -0px;
+  left: 10px;
 }
 
 .sosten {
@@ -83,10 +105,9 @@ img {
   padding: 3px 3px;
   background-color: green;
   color: white;
-  bottom: 25px;
+  bottom: 0px;
   left: 70px;
 }
-
 
 /* FOOTER */
 footer {
