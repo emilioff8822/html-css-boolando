@@ -69,6 +69,7 @@ img {
 .image img:not(:first-child) {
   position: absolute;
   left: 0;
+  top: 0;
 }
 .image img:last-of-type{
   display: none;
